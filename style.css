@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.913);
+    color: #ffffffea;
+    padding: 0 100px;
+}
+
+header {
+    text-align: right;
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+header a {
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+header a:hover {
+    color: rgb(0, 162, 255);
+}
+
+.intro {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    background-color: transparent;
+}
+
+.intro h1 {
+    font-size: 40px;
+    font-weight: 800;
+ }
+
+.intro-name {
+    color: rgb(0, 162, 255);
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.intro h3 {
+    font-weight: 500;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+.project {
+    background-color: rgb(40, 37, 37);
+    border-radius: 10px;
+    width: 425px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    opacity: 0.96;
+}
+
+.project-image {
+    height: 230px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 8px;
+}
+
+.image1 {
+    background-image: url('images/image11.jpg');
+    background-position: top;
+}
+
+.image2 {
+    background-image: url('images/image21.jpg');
+    background-position: bottom;
+}
+
+.image3 {
+    background-image: url('images/image31.jpg');
+    background-position: top;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.775);
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.button a {
+    padding: 4px; 
+    border: 2px solid rgb(27, 145, 214);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(27, 145, 214);
+    transition: background-color 0.2s, border 0.2s, cursor 0.2s, color 0.2s, box-shadow 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: transparent;
+    border: 2px solid rgb(27, 145, 214);
+    cursor: pointer;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(27, 145, 214, 0.5);
+}
